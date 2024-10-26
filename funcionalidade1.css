@@ -1,0 +1,45 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #bbbbbb
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.NavBar {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 24px;
+}
+
+.link {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    position: relative;
+}
+
+.link:hover {
+    color: #eb0779; 
+}
+
+.NavBar--right {
+    display: flex;
+    align-items: center;
+}
+
+.NavBar .link:last-child {
+    margin-right: 0; 
+}
