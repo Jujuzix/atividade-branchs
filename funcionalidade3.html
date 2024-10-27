@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 01</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <style>
+        .card img {
+            transition: transform 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="classe">
+        <h1>The Last Of Us</h1>
+        <div class="card">
+            <img height="300px" src="img/foto1.jpg" alt="">
+            <img height="300px" src="img/foto2.jpg" alt="">
+            <img height="300px" src="img/foto3.jpg" alt="">
+        </div>
+    </div>
+
+    <script>
+        const images = document.querySelectorAll('.card img');
+
+        images.forEach(image => {
+            image.addEventListener('mouseenter', () => {
+                image.style.transform = 'scale(1.1)';
+            });
+            image.addEventListener('click', () => {
+                image.style.transform = 'rotate(10deg)';
+                setTimeout(() => {
+                    image.style.transform = 'rotate(0deg)';
+                }, 300);
+            });
+        });
+    </script>
+</body>
+</html>
